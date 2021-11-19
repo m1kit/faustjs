@@ -11,6 +11,10 @@
 	background-color: $color-light-gray;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 @media screen and (min-width: $breakpoint-medium) {
 	#home_hero h1 {
 		max-width: 40%; // Reduced from 80% on the front-page only to wrap the headline.

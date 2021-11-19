@@ -27,7 +27,7 @@ html[data-theme='dark'] .features {
 }
 
 .featuresLink:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .featureSvg {

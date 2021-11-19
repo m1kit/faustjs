@@ -38,7 +38,8 @@ export default function Page() {
           button2Text="Headless on GitHub"
           button2URL="https://github.com/wpengine/faustjs"
           bgImage="/images/headless_hero_background.jpg"
-          id={styles.home_hero}>
+          id={styles.home_hero}
+        >
           <p>
             WP&nbsp;Engine’s Headless WordPress Framework includes this example
             project, the{' '}
@@ -68,6 +69,41 @@ export default function Page() {
               for WordPress integration. Dive in and edit this template at{' '}
               <code>src/pages/index.tsx</code> or discover more below.
             </p>
+            <div className={styles.features}>
+              <div className={styles.feature}>
+                <h3>Static Site Generation</h3>
+                <p>
+                  This example app uses Next.js&apos; Static Site Generation
+                  (SSG), meaning the HTML is generated at build time and will be
+                  reused on each request. <br />
+                  <a href="https://nextjs.org/docs/basic-features/pages#two-forms-of-pre-rendering">
+                    Learn more about SSG
+                  </a>
+                </p>
+              </div>
+              <div className={styles.feature}>
+                <h3>Incremental Static Regeneration</h3>
+                <p>
+                  In addition to SSG, this example app uses Next.js&apos;
+                  Incremental Static Regeneration (ISR), meaning content is
+                  refreshed after a certain amount of time{' '}
+                  <span className={styles.bold}>
+                    (Faust.js defaults to 15 minutes)
+                  </span>
+                  . <br />
+                  <a href="https://vercel.com/docs/concepts/next.js/incremental-static-regeneration">
+                    Learn more about ISR
+                  </a>
+                </p>
+              </div>
+              <div className={styles.feature}>
+                <h3>Previews</h3>
+                <p>
+                  This example has support for Post/Page previews! See
+                  <code>/src/pages/preview.tsx</code> for more details.
+                </p>
+              </div>
+            </div>
             <div className={styles.features}>
               <div className={styles.feature}>
                 <h3>Global Styles and Fonts</h3>
@@ -121,7 +157,8 @@ export default function Page() {
           title="Questions or comments?"
           buttonText="Join the discussion on GitHub"
           buttonURL="https://github.com/wpengine/faustjs/discussions"
-          headingLevel="h2">
+          headingLevel="h2"
+        >
           <p>
             We welcome feature requests, bug reports and questions in the{' '}
             <a href="https://github.com/wpengine/faustjs">
